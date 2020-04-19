@@ -97,7 +97,7 @@
      width: 100%;
      animation-name: let;
      animation-duration: 1.8s;
-    
+
  }
  #add2{
     animation-name: hello;
@@ -113,4 +113,21 @@
 33%{color:#ffa48e;}
 66% {color:palevioletred;}
 100%{color:lightpink;}   
+}
+@keyframes cam1
+{
+0%{color:firebrick;}   
+33%{color:brown;}
+66% {color:purple;}
+100%{color:firebrick;}   
+}
+.opa
+{
+opacity: 1;
+animation-name: opa;
+animation-duration: 1.2s;
+}
+@keyframes opa{
+    0%{opacity: 0.3;}
+    100%{opacity: 1;}
 }

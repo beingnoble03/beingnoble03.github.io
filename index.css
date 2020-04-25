@@ -88,7 +88,7 @@
  }
  @keyframes hello{
      0%{display: none;opacity: 0;}
-     100%{display: none;opacity: 0.8;}
+     100%{display: none;opacity: 1;}
  }
  #add1
  {

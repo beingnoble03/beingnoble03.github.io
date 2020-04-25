@@ -109,17 +109,17 @@
     }
 @keyframes cam
 {
-0%{color:lightpink;}   
+0%{color:palevioletred;}   
 33%{color:#ffa48e;}
-66% {color:palevioletred;}
-100%{color:lightpink;}   
+66% {color:lightpink;}
+100%{color:palevioletred;}   
 }
 @keyframes cam1
 {
-0%{color:firebrick;}   
+0%{color:purple;}   
 33%{color:brown;}
-66% {color:purple;}
-100%{color:firebrick;}   
+66% {color:firebrick;}
+100%{color:purple;}   
 }
 .opa
 {

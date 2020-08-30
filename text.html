@@ -1,7 +1,7 @@
 <html><head>
     <title>TextBoxStyl1</title>
     <style>
-    	#box1{
+    	.box1{
     		border-radius: 7px;
     		border: none;
     		height: 40px;
@@ -14,11 +14,11 @@
             outline: none;
     		    	}
 
-    	#box1:hover{
+    	.box1:hover{
     		background-color: rgba(10, 123, 255, 0.15);
             transition: 0.5s;
     	}	 
-    	   		#box1:focus{
+    	   		.box1:focus{
     		background-color: rgba(10, 123, 255, 0.15);
             transition: 0.5s;
     	}	
@@ -42,13 +42,18 @@ outline: none;
     	.design:hover{
        background-color: #888;
        transition: 0.35s;
-      	};
+      	}
     	.design:click{
     	background-color: #555;
     	}
     	.design:focus{
     		outline: none;
     		background-color: #555;
+    	}
+    	#spa2:hover
+    	{
+    		color: rgba(10, 123, 255, 0.65);
+            transition: 0.3s;
     	}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -58,62 +63,68 @@ outline: none;
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&amp;display=swap" rel="stylesheet">
   </head>			
-    <body style="background-size: cover; background-image: url('https://thumbs.dreamstime.com/b/urban-landscape-modern-cartoon-cityscape-buildings-cars-street-flat-downtown-background-vector-city-scene-illustration-161594579.jpg'); background-position: center;backdrop-filter: blur(25px);">
+    <body style="background-size: cover; background-image: url('https://c4.wallpaperflare.com/wallpaper/556/222/426/blurry-background-vii-wallpaper-preview.jpg'); background-position: center;">
     	<!--Just Noble Mittal Things-->
 
     	    	<div id="dwc">
-    		<table cellpadding="20px" style="border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.30),0 5px 8px 0 rgba(0, 0, 0, 0.20);">
+    		<table cellpadding="15px" style="border-radius: 10px; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.30),0 5px 8px 0 rgba(0, 0, 0, 0.20);">
     			<tbody><tr><td>
-    				<table cellpadding="5px">
+    				<table cellpadding="2px">
     					<tr>
     					<td style="width: 34px;"><img src="https://xtratheme.com/logo-portfolio/wp-content/uploads/sites/10/2017/06/p9-1.jpg" style="width: 34px; height: 34px;"></td>
     				</tr>
     				</table>
     			</td>
     			</tr>
+    			<tr>
+    				<td>
+    					<span id = "spa2" style="font-size: 13.5px;font-family: 'Noto Sans', sans-serif;"><b>Signing Identity | Admin Panel</b></span>
+    				</td>
+    			</tr>
 
     <tr>
-        <td>
-    				    	<input type="text" id="box1" name="username" placeholder="Username">
+        <td style="padding-left: 15px; padding-right: 15px;">
+    				    	<input type="text" class = "box1" id="box1" name="username" placeholder="Identity Name" style="display: block;">
+    				    	<input type="password" class = "box1" id="box2" name="password" placeholder="Identity Password" style="display:none;">
     			</td>
     		</tr>
     		<tr>
-    			<td>
-
-    	<input type="password" id="box1" name="password" placeholder="Password">
-
-    			</td>
-    		</tr>
-    		<tr>
-    			<td align="right">
-    				<a href="file:///home/beingnoble/Desktop/SSM/index.html">
-<button class="design">
+    			<td align="right" style="padding-top: 15px;">
+    				<button class="design" onclick="pass()">
       <table class="content" cellpadding="1px">
         <tbody><tr>
           <td><img src="https://simpleicon.com/wp-content/uploads/play1.png" style="height:16px;width: 16px;">
           </td>
           <td>
-            <span style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">
-GET IN
+            <span id = "spa1" style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">
+PASSWORD
             </span> 
           </td>
         </tr>
     
       </tbody></table>
         </button>
-</a>
+
     			</td>
     		</tr>
     		<tr>
-    			<td style="padding-top: 10px;" align="center">
+    			<td style="padding-top: 35px;" align="center">
     				<span style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">© Dive Inc. | Just <a href="https://github.com/beingnoble03" style="color: black;"> <b> BeingNoble03</b> </a> Things </span>
     			</td>
     		</tr>
     		    		</tbody></table>
 
     	    </div>
+    	    <script type="text/javascript">
+    	    	function pass(){
+    	    		document.getElementById("spa1").innerHTML = "GET IN";
+    	    		document.getElementById("spa2").innerHTML = "<b>Identity  Password | Admin Panel</b>";
+    	    		document.getElementById("box1").style.display = "none";
+    	    		document.getElementById("box2").style.display = "block";
+    	    	}
+    	    </script>
     	        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     	    
-</body></html>
+    	    </body></html>

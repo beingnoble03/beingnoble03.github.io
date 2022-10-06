@@ -1,157 +1,176 @@
-#errh{
-    color: white;
-    text-shadow:  1px 1px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;
-    padding-top: 40px;
+#errh {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;
+  padding-top: 40px;
 }
-#cont{
-    color: white;
-    text-shadow: 0 0 5px black, 0 0 20px rebeccapurple;
-    padding-top:30px; 
+#cont {
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 20px rebeccapurple;
+  padding-top: 30px;
 }
-#l1
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1;
-  
-    animation-delay:0s;
-    animation-iteration-count: infinite;
-  }
-@keyframes l1{
-    0% { display: block;opacity: 0;}
-    100%{display: block;opacity: 1;}
-}
-#l2
-{
-    opacity:0;
-    animation-duration: 1.2s; 
-    animation-name:l1; 
-    animation-delay:0.1s;
-    animation-iteration-count: infinite;
-  }
-  #l3
-  {
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1;
-      animation-delay:0.2s;
-      animation-iteration-count: infinite;
-    }
-    #l4
-{
-    opacity: 0;
-    animation-duration:1.2s; 
-    animation-name:l1; 
-    animation-delay:0.3s;
-    animation-iteration-count: infinite;
-  }
-  #l5
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1;
-    animation-delay:0.4s;
-    animation-iteration-count: infinite;
-  }
-  #l6
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1; 
-    animation-delay:0.5s;
-    animation-iteration-count: infinite;
-  }
-  #l7
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1;
-    animation-delay:0.6s;
-    animation-iteration-count: infinite;
-  }
-  #l8
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1; 
-    animation-delay:0.7s;
-    animation-iteration-count: infinite;
-  }
-  #l9
-{
-    opacity: 0;
-    animation-duration: 1.2s; 
-    animation-name:l1;
-    animation-delay:0.8s;
-    animation-iteration-count: infinite;
-  }
- #add
- {
-     width: 100%;
-     animation-name: let;
-     animation-duration: 0.6s;
- }
- @keyframes let{
-     0%{width: 85%;}
+#l1 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
 
-     100%{width:100%;}
- }
- @keyframes hello{
-     0%{display: none;opacity: 0;}
-     100%{display: none;opacity: 1;}
- }
- #add1
- {
-     opacity: 1;
-     margin-left:0px;
-     width: 100%;
-     animation-name: let;
-     animation-duration: 1.8s;
-
- }
- #add2{
-    animation-name: hello;
-    animation-duration: 3s;  
- }
- #cam
- {
-     animation-iteration-count: infinite;
-    }
-@keyframes cam
-{
-0%{color:#052757;}   
-50%{color:#21539a;}   
-100%{color:#052757;}  
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
 }
-@keyframes borch
-{
-0%{text-shadow:  0px 0px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;}   
-50%{text-shadow: 0 0 5px red, 0 0 15px rebeccapurple;}   
-100%{text-shadow:  0px 0px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;}  
+@keyframes l1 {
+  0% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
-.typewriter{
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0em; /* Adjust as needed */
-    animation: 
-      typing 2s steps(40, end),
-      blink-caret .5s step-end infinite;
-      max-width: 305px;
+#l2 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+#l3 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+#l4 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+#l5 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+#l6 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+#l7 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+#l8 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.7s;
+  animation-iteration-count: infinite;
+}
+#l9 {
+  opacity: 0;
+  animation-duration: 1.2s;
+  animation-name: l1;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+}
+#add {
+  width: 100%;
+  animation-name: let;
+  animation-duration: 0.6s;
+}
+@keyframes let {
+  0% {
+    width: 85%;
+  }
 
-   }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 305px }
+  100% {
+    width: 100%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    13% { border-color: orange }
+}
+@keyframes hello {
+  0% {
+    display: none;
+    opacity: 0;
   }
+  100% {
+    display: none;
+    opacity: 1;
+  }
+}
+#add1 {
+  opacity: 1;
+  margin-left: 0px;
+  width: 100%;
+  animation-name: let;
+  animation-duration: 1.8s;
+}
+#add2 {
+  animation-name: hello;
+  animation-duration: 3s;
+}
+#cam {
+  animation-iteration-count: infinite;
+}
+@keyframes cam {
+  0% {
+    color: #052757;
+  }
+  50% {
+    color: #21539a;
+  }
+  100% {
+    color: #052757;
+  }
+}
+@keyframes borch {
+  0% {
+    text-shadow: 0px 0px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;
+  }
+  50% {
+    text-shadow: 0 0 5px red, 0 0 15px rebeccapurple;
+  }
+  100% {
+    text-shadow: 0px 0px 2px black, 0 0 5px #052757, 0 0 15px rebeccapurple;
+  }
+}
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0em; /* Adjust as needed */
+  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+  max-width: 305px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 305px;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  13% {
+    border-color: orange;
+  }
+}

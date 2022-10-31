@@ -1,300 +1,422 @@
 <html>
-<link rel="icon" href="tools-solid.png">
+  <link rel="icon" href="tools-solid.png" />
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163874009-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163874009-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-163874009-1');
-  </script>
-  <!--Just Noble Mittal Things-->
-  <title>
-    Noble Mittal Blog
-  </title>
-  <link href="index.css" rel="stylesheet">
-  <meta charset=utf-8>
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-  <style type="text/css">
-    .design {
-      width: auto;
-      height: auto;
-      border: 2px solid black;
-      border-radius: 5px;
-      background-color: #f4f4f4;
-      cursor: pointer;
-    }
-
-    @media screen and (max-width: 600px) {
+      gtag("config", "UA-163874009-1");
+    </script>
+    <!--Just Noble Mittal Things-->
+    <title>Noble Mittal Blog</title>
+    <link href="index.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
       .design {
-        width: 200px;
-        /* height: 100px; */
+        width: auto;
+        height: auto;
         border: 2px solid black;
         border-radius: 5px;
         background-color: #f4f4f4;
         cursor: pointer;
       }
 
-      .parent tr{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      @media screen and (max-width: 600px) {
+        .design {
+          width: 200px;
+          /* height: 100px; */
+          border: 2px solid black;
+          border-radius: 5px;
+          background-color: #f4f4f4;
+          cursor: pointer;
+        }
 
+        .parent tr {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
 
       .content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        padding: 5px;
       }
 
-      .content>tr {
-        display: flex;
-        flex-direction: column;
+      .design:hover {
+        background-color: #555;
       }
-    }
 
-    .design:hover {
-      background-color: #555;
-    }
+      .design:click {
+        background-color: #444;
+      }
+    </style>
+  </head>
 
-    ;
-
-    .design:click {
-      background-color: #444;
-    }
-  </style>
-</head>
-
-<body style="background-color:#121212;">
-  <table style="width:100%;">
-    <tr>
-      <td>
-        <span id="dis1" style="font-size:14px;color:#f2e7fe;opacity:0.65;margin-left:8px;"> <b></b>
-        </span><br>
-        <span id="dis2"
-          style="font-size:14px;animation-name:cam;animation-duration:6s;color:#bb86fc;animation-iteration-count:infinite;opacity:1;margin-left:8px;">
-          <b></b>
-        </span>
-      </td>
-      <td>
-        <div id="sw1" style="padding-top:5px;" align="right" class="opa custom-control custom-switch">
-          <input onclick="myFunction()" style="padding-top:5px;" type="checkbox" class="custom-control-input"
-            id="customSwitch1">
-          <label id="in2"
-            style="margin-right:7px;padding-top:3.5px;font-family: 'Comfortaa', cursive;font-size:12px;color:white;"
-            class="custom-control-label" for="customSwitch1">Toggle Mode</label>
-        </div>
-        <div align="right" id="theme-text"
-          style="padding-top:5px;margin-right:10px;opacity:0.75;font-family: 'Comfortaa', cursive;font-size:12px;color:white;">
-          Dark Dust Mode
-        </div>
-      </td>
-    </tr>
-  </table>
-
-
-  <div style="font-family: 'Baloo Tamma 2', cursive;font-size:22px;margin-top:13%;" align="center" id="add">
-    <span id="ss1" style="color:#ffffff;opacity:0.77;">
-      &lt/
-    </span>
-    <span id="total" style="display:inline;opacity:1;animation-name:hello;animation-duration:1.2s;">
-      <span id="cam" style="animation-name:cam;animation-duration:6s;color:#bb86fc;">
-        <span style="font-size:30px;">N</span>
-
-        <span id="l1">o</span>
-        <span id="l2">b</span>
-        <span id="l3">l</span>
-        <span id="l4">e</span>
-        <span style="font-size:30px;">M</span>
-        <span id="l5">i</span>
-        <span id="l6">t</span>
-        <span id="l7">t</span>
-        <span id="l8">a</span>
-        <span id="l9">l</span>
-      </span>
-    </span>
-    <span id="ss2" style="color:#ffffff;opacity:0.77;">
-      &gt
-    </span>
-  </div>
-  <div align="center" id="add">
-    <div style="opacity:1;animation-name:hello;animation-duration:1.2s;">
-      <div id="info1" style="display:inline;font-size:12.5px;padding-left:3px;color:#f2e7fe;opacity:0.65;">
-        <b>
-          #DoWhatYouCan't | © Noble Mittal 2020-22 | BN03
-        </b>
-      </div>
-      <br>
-      <br>
-      <span id="unv1" style="font-size:13px;padding-left:3px;color:#f2e7fe;opacity:0.65;">
-        <b>.......</b>
-      </span>
-      <b>
-        <p style="animation-name:cam;animation-duration:6s;color:#bb86fc;animation-iteration-count:infinite;font-size:15px;padding-left:3px;color:#f2e7fe;opacity:0.9;"
-          id="demo">Coming Soon...</p>
-      </b>
-      <br>
-    </div>
-  </div>
-  <div align="center" style="margin-top: 100px;" class="parent">
-    <table cellpadding="5px">
+  <body style="background-color: #121212">
+    <table style="width: 100%">
       <tr>
         <td>
-          <a href="https://github.com/beingnoble03">
-            <button class="design">
-              <table class="content" cellpadding="4px">
-                <tr>
-                  <td><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
-                      style="height:17px;width: 17px;">
-                  </td>
-                  <td>
-                    <span style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">
-                      GITHUB
-                    </span>
-                  </td>
-                </tr>
-
-              </table>
-            </button>
-          </a>
+          <span
+            id="dis1"
+            style="
+              font-size: 14px;
+              color: #f2e7fe;
+              opacity: 0.65;
+              margin-left: 8px;
+            "
+          >
+            <b></b> </span
+          ><br />
+          <span
+            id="dis2"
+            style="
+              font-size: 14px;
+              animation-name: cam;
+              animation-duration: 6s;
+              color: #bb86fc;
+              animation-iteration-count: infinite;
+              opacity: 1;
+              margin-left: 8px;
+            "
+          >
+            <b></b>
+          </span>
         </td>
         <td>
-          <a href="https://facebook.com/noble.mittal">
-            <button class="design">
-              <table class="content" cellpadding="4px">
-                <tr>
-                  <td><img
-                      src="https://cdn.iconscout.com/icon/free/png-256/facebook-social-media-fb-logo-square-44659.png"
-                      style="height:17px;width: 17px;">
-                  </td>
-                  <td>
-                    <span style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">
-                      FACEBOOK
-                    </span>
-                  </td>
-                </tr>
-
-              </table>
-            </button>
-
-          </a>
-        </td>
-
-        <td>
-          <a href="https://www.instagram.com/being_noble03/">
-            <button class="design">
-              <table class="content" cellpadding="4px">
-                <tr>
-                  <td><img src="https://cdn.iconscout.com/icon/free/png-256/instagram-233-896451.png"
-                      style="height:17px;width: 17px;">
-                  </td>
-                  <td>
-                    <span style="font-size: 12px;font-family: 'Noto Sans', sans-serif;">
-                      INSTAGRAM
-                    </span>
-                  </td>
-                </tr>
-
-              </table>
-            </button>
-
-          </a>
+          <div
+            id="sw1"
+            style="padding-top: 5px"
+            align="right"
+            class="opa custom-control custom-switch"
+          >
+            <input
+              onclick="myFunction()"
+              style="padding-top: 5px"
+              type="checkbox"
+              class="custom-control-input"
+              id="customSwitch1"
+            />
+            <label
+              id="in2"
+              style="
+                margin-right: 7px;
+                padding-top: 3.5px;
+                font-family: 'Comfortaa', cursive;
+                font-size: 12px;
+                color: white;
+              "
+              class="custom-control-label"
+              for="customSwitch1"
+              >Toggle Mode</label
+            >
+          </div>
+          <div
+            align="right"
+            id="theme-text"
+            style="
+              padding-top: 5px;
+              margin-right: 10px;
+              opacity: 0.75;
+              font-family: 'Comfortaa', cursive;
+              font-size: 12px;
+              color: white;
+            "
+          >
+            Dark Dust Mode
+          </div>
         </td>
       </tr>
     </table>
-  </div>
-  <script>
-    //Just Noble Mittal Things
-    function myFunction() {
-      var checkBox = document.getElementById("customSwitch1");
-      var text = document.getElementById("theme-text");
-      if (checkBox.checked == true) {
-        text.innerHTML = "Onion White Mode";
-        text.style.color = "Black";
-        document.getElementById('in2').style.color = "Black";
-        document.getElementById('ss1').style.color = "black";
-        document.getElementById('ss2').style.color = "black";
-        document.getElementById('info1').style.color = "black";
-        document.body.style.backgroundColor = "#f7f7f7";
-        document.getElementById('total').style.opacity = "0.8";
-        document.getElementById('cam').style.animationName = "cam1";
-        document.getElementById('demo').style.animationName = "cam1";
-        document.getElementById('dis2').style.animationName = "cam1";
-        document.getElementById('demo').style.color = "black";
-        document.getElementById('unv1').style.color = "black";
-        document.getElementById('dis1').style.color = "black";
-        document.getElementById('dis2').style.color = "black";
-      } else {
-        text.innerHTML = "Dark Dust Mode";
-        text.style.color = "White";
-        document.getElementById('in2').style.color = "White";
-        document.getElementById('ss1').style.color = "White";
-        document.getElementById('ss2').style.color = "White";
-        document.getElementById('info1').style.color = "#f2e7fe";
-        document.body.style.backgroundColor = "#121212";
-        document.getElementById('total').style.opacity = "0.8";
-        document.getElementById('cam').style.animationName = "cam";
-        document.getElementById('demo').style.color = "White";
-        document.getElementById('demo').style.animationName = "cam";
-        document.getElementById('dis2').style.animationName = "cam";
-        document.getElementById('dis1').style.color = "White";
-        document.getElementById('unv1').style.color = "White";
-        document.getElementById('dis2').style.color = "White";
-      }
-    }
-  </script>
-  <script>
-    var deadline = new Date("Oct 23, 2021 12:00:00").getTime();
-    var x = setInterval(function () {
-      var now = new Date().getTime();
-      var t = deadline - now;
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((t % (1000 * 60)) / 1000);
-      document.getElementById("demo").innerHTML = days + " Days "
-        + hours + " Hours " + minutes + " Minutes " + seconds + "Sec";
-      if (t < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "Coming Soon";
-      }
-    }, 1000); 
-  </script>
-  <script>
-    window.onload = function () {
-      var elements = document.getElementsByClassName('txt-rotate');
-      for (var i = 0; i < elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-rotate');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+
+    <div
+      style="
+        font-family: 'Baloo Tamma 2', cursive;
+        font-size: 22px;
+        margin-top: 13%;
+      "
+      align="center"
+      id="add"
+    >
+      <span id="ss1" style="color: #ffffff; opacity: 0.77"> &lt/ </span>
+      <span
+        id="total"
+        style="
+          display: inline;
+          opacity: 1;
+          animation-name: hello;
+          animation-duration: 1.2s;
+        "
+      >
+        <span
+          id="cam"
+          style="animation-name: cam; animation-duration: 6s; color: #bb86fc"
+        >
+          <span style="font-size: 30px">N</span>
+
+          <span id="l1">o</span>
+          <span id="l2">b</span>
+          <span id="l3">l</span>
+          <span id="l4">e</span>
+          <span style="font-size: 30px">M</span>
+          <span id="l5">i</span>
+          <span id="l6">t</span>
+          <span id="l7">t</span>
+          <span id="l8">a</span>
+          <span id="l9">l</span>
+        </span>
+      </span>
+      <span id="ss2" style="color: #ffffff; opacity: 0.77"> &gt </span>
+    </div>
+    <div align="center" id="add">
+      <div style="opacity: 1; animation-name: hello; animation-duration: 1.2s">
+        <div
+          id="info1"
+          style="
+            display: inline;
+            font-size: 12.5px;
+            padding-left: 3px;
+            color: #f2e7fe;
+            opacity: 0.65;
+          "
+        >
+          <b> #DoWhatYouCan't | © Noble Mittal 2020-22 | BN03 </b>
+        </div>
+        <br />
+        <br />
+        <span
+          id="unv1"
+          style="
+            font-size: 13px;
+            padding-left: 3px;
+            color: #f2e7fe;
+            opacity: 0.65;
+          "
+        >
+          <b>.......</b>
+        </span>
+        <b>
+          <p
+            style="
+              animation-name: cam;
+              animation-duration: 6s;
+              color: #bb86fc;
+              animation-iteration-count: infinite;
+              font-size: 15px;
+              padding-left: 3px;
+              color: #f2e7fe;
+              opacity: 0.9;
+            "
+            id="demo"
+          >
+            Coming Soon...
+          </p>
+        </b>
+        <br />
+      </div>
+    </div>
+    <div align="center" style="margin-top: 100px" class="parent">
+      <table cellpadding="5px">
+        <tr>
+          <td>
+            <a href="https://github.com/beingnoble03">
+              <button class="design">
+                <div class="content" cellpadding="4px">
+                  <div>
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png"
+                      style="height: 17px; width: 17px"
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: black;
+                      font-family: 'Noto Sans', sans-serif;
+                    "
+                  >
+                    GITHUB
+                  </div>
+                </div>
+              </button>
+            </a>
+          </td>
+          <td>
+            <a href="https://facebook.com/noble.mittal">
+              <button class="design">
+                <div class="content" cellpadding="4px">
+                  <div>
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/facebook-social-media-fb-logo-square-44659.png"
+                      style="height: 17px; width: 17px"
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: black;
+                      font-family: 'Noto Sans', sans-serif;
+                    "
+                  >
+                    FACEBOOK
+                  </div>
+                </div>
+              </button>
+            </a>
+          </td>
+          <td>
+            <a href="https://www.instagram.com/being_noble03/">
+              <button class="design">
+                <div class="content" cellpadding="4px">
+                  <div>
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/instagram-233-896451.png"
+                      style="height: 17px; width: 17px"
+                    />
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: black;
+                      font-family: 'Noto Sans', sans-serif;
+                    "
+                  >
+                    INSTAGRAM
+                  </div>
+                </div>
+              </button>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      //Just Noble Mittal Things
+      function myFunction() {
+        var checkBox = document.getElementById("customSwitch1");
+        var text = document.getElementById("theme-text");
+        if (checkBox.checked == true) {
+          text.innerHTML = "Onion White Mode";
+          text.style.color = "Black";
+          document.getElementById("in2").style.color = "Black";
+          document.getElementById("ss1").style.color = "black";
+          document.getElementById("ss2").style.color = "black";
+          document.getElementById("info1").style.color = "black";
+          document.body.style.backgroundColor = "#f7f7f7";
+          document.getElementById("total").style.opacity = "0.8";
+          document.getElementById("cam").style.animationName = "cam1";
+          document.getElementById("demo").style.animationName = "cam1";
+          document.getElementById("dis2").style.animationName = "cam1";
+          document.getElementById("demo").style.color = "black";
+          document.getElementById("unv1").style.color = "black";
+          document.getElementById("dis1").style.color = "black";
+          document.getElementById("dis2").style.color = "black";
+        } else {
+          text.innerHTML = "Dark Dust Mode";
+          text.style.color = "White";
+          document.getElementById("in2").style.color = "White";
+          document.getElementById("ss1").style.color = "White";
+          document.getElementById("ss2").style.color = "White";
+          document.getElementById("info1").style.color = "#f2e7fe";
+          document.body.style.backgroundColor = "#121212";
+          document.getElementById("total").style.opacity = "0.8";
+          document.getElementById("cam").style.animationName = "cam";
+          document.getElementById("demo").style.color = "White";
+          document.getElementById("demo").style.animationName = "cam";
+          document.getElementById("dis2").style.animationName = "cam";
+          document.getElementById("dis1").style.color = "White";
+          document.getElementById("unv1").style.color = "White";
+          document.getElementById("dis2").style.color = "White";
         }
       }
-      // INJECT CSS
-      var css = document.createElement("style");
-      css.type = "text/css";
-      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-      document.body.appendChild(css);
-    };
-  </script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    </script>
+    <script>
+      var deadline = new Date("Oct 23, 2021 12:00:00").getTime();
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var t = deadline - now;
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("demo").innerHTML =
+          days +
+          " Days " +
+          hours +
+          " Hours " +
+          minutes +
+          " Minutes " +
+          seconds +
+          "Sec";
+        if (t < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "Coming Soon";
+        }
+      }, 1000);
+    </script>
+    <script>
+      window.onload = function () {
+        var elements = document.getElementsByClassName("txt-rotate");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-rotate");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+          ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+      };
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
